@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>password validator</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+<body>
+
+<h1><span>Password</span> Strength</h1>
+
+<div class="container">
+  <form id="myform" action="#">
+    <label for="usrname">Username</label>
+    <input type="text" id="usrname" name="usrname" required>
+
+   <label for="psw">Password</label>
+    <input type="password" id="psw" name="psw"   required>
+   <button type="button" class="button" onclick="getPassword()">Check Password</button>
+    <div id="passwordDescription" class="strength0">Password not entered</div>
+  </form><div id="progressbar">
+  <div id="progressbarIn"></div>  
+</div>
+ <div id="message">
+  <h3>Password must contain the following:</h3>
+  <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+  <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+  <p id="number" class="invalid">A <b>number</b></p>
+  <p id="symbol" class="invalid">At least <b>1 special characters/symbol</b></p>
+  <p id="passlength" class="invalid">Minimum <b>6 characters and maximum 12 characters </b></p>
+  </div></div>
+  </body>
+</html>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

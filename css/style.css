@@ -1,0 +1,174 @@
+html{
+    background: #696969;
+    font-family: 'Lato', sans-serif;
+    color:white;
+}
+h1{
+    color:white;
+    font-size:50px;
+    text-align:center;
+    padding-top:30px;
+    margin-bottom:20px;
+}
+h1 span{
+    font-weight:bold;
+    color:white;
+    opacity:.3;
+}
+/* Style all input fields */
+input {
+    width: 25%;
+    padding: 12px;
+    border: 1px solid green;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    background: lightyellow;
+    color: green;
+}
+
+/* Style the submit button */
+.button {
+    color: white;
+    width:12.5%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  background-color: #4CAF50;
+  border-radius: 5px;
+  box-shadow: 0 5px #999;
+  font-size:16px;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+/* Style the container for inputs */
+.container {
+    padding: 20px;
+    width: 80%;
+    position: absolute;
+    margin: 0 auto;
+}
+#myform{
+width: 100%;
+margin: 0 auto;
+position: relative;
+margin-bottom:6px;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+text-align: center;
+}
+
+/* The message box is shown when the user clicks on the password field */
+#message {
+    display:none;
+    color: #000;
+    margin-top: 5px;
+  border-radius: 5px; /* (height of inner div) / 2 + padding */
+  padding: 3px;
+  display:none;
+  width:250px;
+  border:2px solid red;
+ border-bottom: 6px solid red;
+  background-color: lightgrey;
+}
+
+#message p {
+    padding: 10px 35px;
+    font-size: 15px;
+}
+/* progress bar for password strength*/
+#progressbar {
+  background-color: #ccc;
+  border-radius: 13px; /* (height of inner div) / 2 + padding */
+  padding: 3px;
+  display:none;
+  width:100%;
+  margin-bottom:6px;
+}
+
+#progressbarIn {
+   background-color: green;
+   width: 0%; /* Adjust with JavaScript */
+   height: 20px;
+   border-radius: 13px;
+  color: #fff;
+  text-align: center;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+    color: green;
+    
+}
+
+.valid:before {
+    position: relative;
+    left: -35px;
+    content:url("https://findicons.com/files/icons/2166/oxygen/16/checkmark_korganizer.png");
+}
+
+/* Add a red text color and an "x" icon when the requirements are wrong */
+.invalid {
+    color: red;
+}
+
+.invalid:before {
+    position: relative;
+    left: -35px;
+    content: url("https://findicons.com/files/icons/1620/crystal_project/16/button_cancel.png");
+} 
+#passwordStrength
+{
+        height:15px;
+        display:block;
+        float:left;
+        border-bottom: 6px solid white;
+}
+#passwordDescription{
+  position:relative;
+  float: center;
+}
+.strength0
+{
+        width:250px;
+        background:#cccccc;
+        color:green;
+}
+.strength1
+{
+        width:250px;
+        background:#ff0000;
+}
+.strength2
+{
+        width:250px;
+        background:#ff5f5f;
+}
+.strength3
+{
+        width:250px;
+        background:#56e500;
+}
+.strength4
+{
+        background:#399800;
+        width:250px;
+}
